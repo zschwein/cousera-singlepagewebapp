@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 1 Solution</title>
+    <script type="text/javascript" src="../common/files/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-app="mod1-app">
+    <div class="app_container" ng-controller="mod1-controller">
+        <h1>Lunch Checker</h1>
+
+        <div class="form_group">
+            <input id="lunch_input" ng-model="lunch_items" placeholder="list things for lunch with comma seperated">
+        </div>
+
+        <div class="form_group">
+            <button class="btn btn-default" ng-click="parseLunchInput()">Check if too much</button>
+        </div>
+
+        <div class="form_group message">
+            {{message}}
+        </div>
+
+
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="app_style.css">
+</body>
+</html>
